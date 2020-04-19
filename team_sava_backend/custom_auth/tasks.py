@@ -16,11 +16,10 @@ def send_password_reset_email(token_url, email, name):
     content = "Reset password here"
     html_content = render_to_string(template_name, context=context)
 
-
-ail(
-    subject,
-    content,
-    to,
-    from_email="no-reply@ivandjuricic.com",
-    html_content=html_content
-)
+    send_email(
+        subject,
+        content,
+        to,
+        from_email="no-reply@ivandjuricic.com",
+        html_content=html_content
+    )
