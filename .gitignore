@@ -115,15 +115,15 @@ venv.bak/
 static/*
 
 # dependencies
-/node_modules
-/.pnp
+team_sava_frontend/node_modules
+team_sava_frontend/.pnp
 .pnp.js
 
 # testing
-/coverage
+team_sava_frontend/coverage
 
 # production
-/build
+team_sava_frontend/build
 
 # misc
 .DS_Store
