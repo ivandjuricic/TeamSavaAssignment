@@ -1,0 +1,18 @@
+Django==3.0.3 
+psycopg2>=2.7,<3.0
+python-dotenv
+django-countries
+djangorestframework
+djangorestframework-simplejwt
+gunicorn
+celery
+django-celery-results
+django-cors-headers
+
+# dev dependecies
+black
+isort
+pytest
+pytest-django
+factory_boy
+ipython  # for better console
