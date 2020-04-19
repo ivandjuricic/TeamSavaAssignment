@@ -1,6 +1,9 @@
 build:
 	docker-compose build
 
+db:
+	docker-compose up -d db
+
 runserver:
 	docker-compose up
 
