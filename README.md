@@ -84,7 +84,7 @@ In a different terminal from the backend server navigate to:
 
 and run:
 
-1. cp `dist` `.env`
+1. cp `.env.template .env`
 2. `npm install`
 3. `npm start`
 4. profit
