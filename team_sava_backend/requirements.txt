@@ -8,6 +8,7 @@ gunicorn
 celery
 django-celery-results
 django-cors-headers
+drf-yasg
 
 # dev dependecies
 black

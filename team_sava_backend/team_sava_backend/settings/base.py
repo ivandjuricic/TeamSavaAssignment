@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'custom_auth',
     'django_celery_results',
     'corsheaders',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [

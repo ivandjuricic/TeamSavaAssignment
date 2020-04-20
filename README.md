@@ -21,9 +21,10 @@ After cloning the repo and navigating to:
 `TeamSavaAssignment/team_sava_backend`
 
 1. `cp .env.template .env` - this will hold up some of the secrets. Change the STRIPE_API_KEY to the api key provided in the separate document
-2. run `make db` to initialize the database and wait a few seconds
-3. run `make migrate` to apply djanog app migrations to the database
-4. run `make runserver` to start backend application
+2. run `make build` to build the dockers and install python dependencies
+3. run `make db` to initialize the database and wait a few seconds
+4. run `make migrate` to apply djanog app migrations to the database
+5. run `make runserver` to start backend application
 
 #### Models
 
