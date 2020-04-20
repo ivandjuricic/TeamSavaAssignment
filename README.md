@@ -26,34 +26,20 @@ After cloning the repo and navigating to:
 4. run `make migrate` to apply djanog app migrations to the database
 5. run `make runserver` to start backend application and wait until all containers are up and running
 
-#### Models
-
-Two models exists in the app:
-
-1. AuthUser: modified Django user that has no username field and uses the email field as unique identifier
-2. EmailToken: Token with relatioship with AuthUser model, that would hold an UUID. This UUID is used to build the url to which user has to go to get to the password reset form to change it's password.
-
-#### Endpoints
-
-Endpoints can be found in the Postman collection located in `docs` dir of the repository.
-
-Brief overview:
-
-    1) `/api/v1/auth-user/` - supports create, read and delete functionalities of user accounts
-
-    2) `/api/v1/reset-token/` - generating and retrieving password reset token.
-
-    3) `/api/v1/reset-password/` - POST to this method resets the user password
-
-    4) `/api/v1/auth-token/` - POST with credentials generats JWT access/referesh token pair used for authentication
-
-    5) `/api/v1/auth-token/refresh/' - POST with JWT refresh token generates a new access token
-
 #### Authentication
 
 Authentication is done with JWT tokens.
 
 `django-restframeworkd-simple-jwt` is 3rd party library that offers great support for quick implementation of these tokens and is used in the assignment.
+
+### Documentation
+
+API and Models documentation are available on 
+
+* `/docs/` endpoint for Swagger documentation
+* `/redoc` endpoin for Redoc documentation
+
+Alternatively there is Postman collection export in the `team_sava_backend/docs/TeamSava.postman_collection.json` file
 
 #### Celery
 
