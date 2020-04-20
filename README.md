@@ -39,7 +39,7 @@ Authentication is done with JWT tokens.
 API and Models documentation are available on 
 
 * `/docs/` endpoint for Swagger documentation
-* `/redoc` endpoin for Redoc documentation
+* `/redoc/` endpoint for Redoc documentation
 
 Alternatively there is Postman collection export in the `team_sava_backend/docs/TeamSava.postman_collection.json` file
 
