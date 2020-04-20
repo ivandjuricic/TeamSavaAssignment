@@ -16,7 +16,9 @@ Local development is done by docker-compose and there is a build tool (`Makefile
 
 #### Installation
 
-After cloning the repo and navigating to:
+**Make sure you have [Docker](https://docs.docker.com/get-docker/) installed**
+
+After cloning the repository and navigating to:
 
 `TeamSavaAssignment/team_sava_backend`
 
@@ -41,9 +43,14 @@ API and Models documentation are available on
 
 Alternatively there is Postman collection export in the `team_sava_backend/docs/TeamSava.postman_collection.json` file
 
-#### Celery
+#### Email sending and Celery
 
-Assignment requires that email suppose to be sent through which user will get password reset url link. Since sending emails is done via 3rd party service (SENDGRID), it's a good practice to use asynchornous tasks queuer and go-to solution is Celery.
+Assignment requires that email suppose to be sent through which user will get password reset url link.
+
+Since user interaction with email is strictly GET based, the link for password reseting contains token UUID in the url
+and token id reflects relationship to correct user which password resetting is requested.
+
+Since sending emails is done via 3rd party service (SENDGRID), it's a good practice to use asynchornous tasks queuer and go-to solution is Celery.
 
 Celery uses rabbitmq for backend and the results are stored in the database for possible analytics.
 
